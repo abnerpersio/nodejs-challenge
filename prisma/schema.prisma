@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model lesson {
+  id        Int     @id @default(autoincrement())
+  name      String? @db.VarChar(255)
+  user_uuid String? @db.VarChar(255)
+  video_url String? @db.VarChar(255)
+  user      user?   @relation(fields: [user_uuid], references: [uuid], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model user {
+  id       Int      @id @default(autoincrement())
+  name     String?  @db.VarChar(255)
+  email    String   @unique @db.VarChar(255)
+  password String?  @db.VarChar(255)
+  uuid     String   @unique @db.VarChar(255)
+  lesson   lesson[]
+}
