@@ -1,20 +1,37 @@
 {
     "env": {
-        "es2021": true,
-        "node": true
+      "es2021": true,
+      "node": true
     },
     "extends": [
-        "airbnb-typescript"
+      "airbnb-typescript"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "project": "./tsconfig.json",
-        "sourceType": "module"
+      "ecmaVersion": 12,
+      "project": "./tsconfig.json",
+      "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint"
+      "@typescript-eslint"
     ],
+    "settings": {
+      "import/extensions": [".js", ".ts", ".jsx", ".tsx"],
+      "import/parsers": {
+        "@typescript-eslint/parser": [".ts", ".tsx"]
+      },
+      "import/resolver": {
+        "typescript": {}
+      }
+    },
     "rules": {
-      "class-methods-use-this": "off"
+      "class-methods-use-this": "off",
+      "consistent-return": "off",
+      "camelcase": "off",
+      "import/no-extraneous-dependencies": "off",
+      "import/extensions": "off",
+      "react/jsx-filename-extension": "off",
+      "@typescript-eslint/indent": "off",
+      "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "next" }]
     }
 }
