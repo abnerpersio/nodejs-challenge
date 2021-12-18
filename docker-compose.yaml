@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  studier_api: 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: studier_api
+    restart: unless-stopped
+    env_file: .env.production
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/usr/src/app/
+    networks:
+      - default
+    
+  postgres:
+    image: postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: studier
+    volumes:
+    - .:/var/lib/postgresql/data
+
+networks:
+  default:
+    driver: bridge
+
+volumes:
+  node_modules:
