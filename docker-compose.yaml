@@ -23,13 +23,16 @@ services:
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
-      POSTGRES_DB: studier
     volumes:
-    - .:/var/lib/postgresql/data
+      - ./.docker/dbdata:/var/lib/postgresql/data
+    networks:
+      default:
+        aliases:
+          - postgres
+
 
 networks:
   default:
-    driver: bridge
 
 volumes:
   node_modules:

@@ -11,5 +11,6 @@ CREATE TABLE IF NOT EXISTS "lessons" (
   name VARCHAR(255) NOT NULL,
   user_uuid VARCHAR(255) NOT NULL,
   video_url VARCHAR(255),
+  likes INT DEFAULT 0,
   FOREIGN KEY(user_uuid) REFERENCES "users"("uuid")
 );
