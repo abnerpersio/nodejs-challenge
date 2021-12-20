@@ -18,8 +18,9 @@ Node.JS API using Typescript, Express and Prisma
 ## Tabela de conteúdos
 
 - [Como rodar o projeto](#how-to-run-br)
-- [A ideia do projeto](#ideas-br)
 - [Endpoints da API](#endpoints-br)
+- [A ideia do projeto](#ideas-br)
+
 
 <a id="how-to-run-br"></a>
 ## Como rodar o projeto
@@ -80,6 +81,13 @@ Os endpoints estão configurados e documentados em uma collection do INSOMNIA e 
 
 Baixe o arquivo, importe no insomnia e teste a API :)
 
+<a id="ideas-br"></a>
+## A ideia do projeto
+
+A ideia do projeto é um usuário poder compartilhar aulas que acha interessante de todos os tipos de assuntos (inicialmente sobre programação) e ganhar pontos (pontos de score do usuário) para o seu usuário e ajudar pessoas ganhando prêmios!
+
+### O projeto está aberto a futuras features e com ideias para melhorias
+
 -----
 
 <a id="en"></a>
@@ -90,8 +98,8 @@ Baixe o arquivo, importe no insomnia e teste a API :)
 ## Table of contents
 
 - [How to run the project](#how-to-run-en)
-- [The project ideia](#how-to-run-en)
-- [API endpoints](#how-to-run-en)
+- [API endpoints](#ideas-en)
+- [The project ideia](#endpoints-en)
 
 
 <a id="#how-to-run-en"></a>
@@ -153,3 +161,10 @@ The Studier API is working and ready to be tested in port `8080` (default)
 The endpoints are configured and documented in a INSOMNIA collection and the `.json` file is available in [this link](https://gist.github.com/abnerpersio/593f50448769778f415038f04b1263a4)
 
 Download the file, import in insomnia and test the API :)
+
+<a id="ideas-en"></a>
+## The project ideia
+
+The project ideas is that any user can share lessons and learnings that he/she thinks is interessant in all subjects (inicially about programming) and earn score points and help another people being happy!
+
+### The project is open to future features and improvement ideas 
