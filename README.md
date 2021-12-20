@@ -73,6 +73,13 @@ A API Studier estará funcionando e pronta para ser testada na porta `8080` (pad
 
 🚀 Aproveite para testar a API! 🚀
 
+<a id="endpoints-br"></a>
+## Endpoints da API
+
+Os endpoints estão configurados e documentados em uma collection do INSOMNIA e o arquivo `.json` está disponível [neste link](https://gist.github.com/abnerpersio/593f50448769778f415038f04b1263a4)
+
+Baixe o arquivo, importe no insomnia e teste a API :)
+
 -----
 
 <a id="en"></a>
@@ -138,3 +145,11 @@ npm run db:migrate
 The Studier API is working and ready to be tested in port `8080` (default)
 
 🚀 Enjoy to test the API! 🚀
+
+
+<a id="endpoints-en"></a>
+## API endpoints
+
+The endpoints are configured and documented in a INSOMNIA collection and the `.json` file is available in [this link](https://gist.github.com/abnerpersio/593f50448769778f415038f04b1263a4)
+
+Download the file, import in insomnia and test the API :)
