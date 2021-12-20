@@ -102,7 +102,7 @@ A ideia do projeto é um usuário poder compartilhar aulas que acha interessante
 - [The project ideia](#endpoints-en)
 
 
-<a id="#how-to-run-en"></a>
+<a id="how-to-run-en"></a>
 ## How to run the project
 
 ### Without docker
